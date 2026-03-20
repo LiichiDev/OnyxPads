@@ -1,0 +1,37 @@
+# Gradle
+.gradle/
+build/
+out/
+gradle-app.setting
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# VS Code
+.vscode/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Plugin data (opcional - no subir datos de servidor)
+*.yml
+!src/main/resources/*.yml

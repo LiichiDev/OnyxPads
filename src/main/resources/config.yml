@@ -1,0 +1,175 @@
+#══════════════════════════════════════════════════════════════════════════════════#
+#   ▄▄▄▄▄   ▄▄▄    ▄▄▄ ▄▄▄   ▄▄▄ ▄▄▄   ▄▄▄   ▄▄▄▄▄▄▄     ▄▄▄▄   ▄▄▄▄▄▄    ▄▄▄▄▄▄▄  #
+# ▄███████▄ ████▄  ███ ███   ███ ████▄████   ███▀▀███▄ ▄██▀▀██▄ ███▀▀██▄ █████▀▀▀  #
+# ███   ███ ███▀██▄███ ▀███▄███▀  ▀█████▀    ███▄▄███▀ ███  ███ ███  ███  ▀████▄   #
+# ███▄▄▄███ ███  ▀████   ▀███▀   ▄███████▄   ███▀▀▀▀   ███▀▀███ ███  ███    ▀████  #
+#  ▀█████▀  ███    ███    ███    ███▀ ▀███   ███       ███  ███ ██████▀  ███████▀  #
+#                                                                                  #
+#                                   JUMPADS PLUGIN                                 #
+#                                                                                  #
+#══════════════════════════════════════════════════════════════════════════════════#
+#                                                                                  #
+#  =============================================================================   #
+#                                PLUGIN INFORMATION                                #
+#  =============================================================================   #
+#                                                                                  #
+#  » Author:     @LichiDev                                                         #
+#  » Website:     https://lichidev.onyxcraft.net/                                  #
+#                                                                                  #
+#  Documentation: https://github.com/LichiDev/OnyxPads/wiki                        #
+#  =============================================================================   #
+#
+# OnyxPads - Main Configuration File
+#
+# This file contains all the plugin configuration options.
+# You can modify it while the server is offline, or use /onyxpads reload
+# to apply changes without restarting.
+#
+# ════════════════════════════════════════════════════════════════════════════════
+
+# Language selection (en = English, es = Spanish, pt = Portuguese, fr = French, de = German, it = Italian, ru = Russian, zh = Chinese, ja = Japanese, ko = Korean)
+language: en
+
+# ────────────────────────────────────────────────────────────────────────────────
+# GENERAL JUMP PADS CONFIGURATION
+# ────────────────────────────────────────────────────────────────────────────────
+
+# Maximum allowed power (range: 1-10)
+# Defines the upper power limit that players can use.
+max-power: 5
+
+# Default power for new jump pads
+# This value will be used when no power is specified when creating the jump pad.
+default-power: 2
+
+# Default angle for new jump pads
+# 0° = Completely vertical jump (upwards)
+# 90° = Completely horizontal jump
+# Allowed angle range: 0-360
+default-angle: 0
+
+# ────────────────────────────────────────────────────────────────────────────────
+# PROTECTION CONFIGURATION
+# ────────────────────────────────────────────────────────────────────────────────
+protection:
+  # Prevent players from breaking jump pads (even in creative mode)
+  # true = Cannot be broken / false = Can be broken normally
+  prevent-breaking: true
+
+  # Prevent placing blocks on top of jump pads
+  # true = Cannot place blocks / false = Can place blocks
+  prevent-block-place: true
+
+  # Prevent interactions (buttons, levers, etc.) with jump pads
+  # true = Cannot interact / false = Can interact
+  prevent-interact: true
+
+  # Protect jump pads from explosions (TNT, creepers, etc.)
+  # true = Explosions do not destroy them / false = Can be destroyed by explosions
+  protect-from-explosions: true
+
+# ────────────────────────────────────────────────────────────────────────────────
+# COMBAT CONFIGURATION
+# ────────────────────────────────────────────────────────────────────────────────
+combat:
+  # Enable/disable combat restriction
+  enabled: false
+
+  # Time in seconds after being in combat where jump pads cannot be used
+  cooldown: 5
+
+# ────────────────────────────────────────────────────────────────────────────────
+# PARTICLES CONFIGURATION
+# ────────────────────────────────────────────────────────────────────────────────
+particles:
+  # Enable/disable particles when using jump pads
+  enabled: true
+
+  # Particle type (check Spigot/Paper documentation for available types)
+  # Some common types: FLAME, CLOUD, SPELL_WITCH, PORTAL, HEART, etc.
+  type: "FLAME"
+
+  # Number of particles per use
+  count: 20
+
+  # Particle speed
+  speed: 0.1
+
+# ────────────────────────────────────────────────────────────────────────────────
+# SOUNDS CONFIGURATION
+# ────────────────────────────────────────────────────────────────────────────────
+sounds:
+  # Enable/disable sounds when using jump pads
+  enabled: true
+
+  # Sound when using the jump pad (check Spigot/Paper documentation)
+  use: "ENTITY_ENDER_DRAGON_SHOOT"
+
+  # Sound volume (0.0 - 1.0)
+  volume: 0.5
+
+  # Sound pitch (0.5 - 2.0)
+  pitch: 1.0
+
+# ────────────────────────────────────────────────────────────────────────────────
+# TELEPORT SAFETY CONFIGURATION
+# ────────────────────────────────────────────────────────────────────────────────
+teleport-safety:
+  # Enable/disable safety check
+  enabled: true
+
+  # Maximum distance in blocks to search for a safe location
+  max-check-distance: 10
+
+  # Blocks considered safe for landing
+  safe-blocks:
+    - AIR
+    - CAVE_AIR
+    - VOID_AIR
+    - WATER
+    - LAVA
+    - GRASS
+    - TALL_GRASS
+    - FERN
+    - LARGE_FERN
+
+# ────────────────────────────────────────────────────────────────────────────────
+# ALLOWED BLOCKS FOR CREATING JUMP PADS
+# ────────────────────────────────────────────────────────────────────────────────
+# List of blocks where jump pads can be created
+# You can add or remove block types as needed
+allowed-blocks:
+  - STONE_PRESSURE_PLATE
+  - OAK_PRESSURE_PLATE
+  - SPRUCE_PRESSURE_PLATE
+  - BIRCH_PRESSURE_PLATE
+  - JUNGLE_PRESSURE_PLATE
+  - ACACIA_PRESSURE_PLATE
+  - DARK_OAK_PRESSURE_PLATE
+  - MANGROVE_PRESSURE_PLATE
+  - CHERRY_PRESSURE_PLATE
+  - BAMBOO_PRESSURE_PLATE
+  - CRIMSON_PRESSURE_PLATE
+  - WARPED_PRESSURE_PLATE
+  - POLISHED_BLACKSTONE_PRESSURE_PLATE
+  - LIGHT_WEIGHTED_PRESSURE_PLATE
+  - HEAVY_WEIGHTED_PRESSURE_PLATE
+  - SLIME_BLOCK
+  - HONEY_BLOCK
+
+# ────────────────────────────────────────────────────────────────────────────────
+# PERMISSIONS CONFIGURATION
+# ────────────────────────────────────────────────────────────────────────────────
+permissions:
+  # Default permission for jump pads if none is specified
+  default-permission: "onyxpads.use"
+
+  # Allow custom permissions for jump pads (true = any permission can be used)
+  allow-custom-permissions: true
+
+  # List of predefined permissions that can be used
+  predefined-permissions:
+    - "onyxpads.use"
+    - "onyxpads.vip"
+    - "onyxpads.premium"
+    - "onyxpads.staff"

@@ -1,0 +1,70 @@
+name: OnyxPads
+version: '1.0.2'
+main: dev.lichi.onyxPads.OnyxPads
+api-version: '1.21'
+author: LichiDev
+description: Plugin de Jump Pads avanzado con atributos personalizables
+website: https://github.com/LichiDev
+
+commands:
+  onyxpads:
+    description: Comando principal del plugin OnyxPads
+    usage: /<command> [help|create|delete|set|info|list|reload]
+    aliases: [opads, jumppads, jp, pads]
+
+permissions:
+  onyxpads.*:
+    description: Todos los permisos de OnyxPads
+    default: op
+    children:
+      onyxpads.use: true
+      onyxpads.create: true
+      onyxpads.delete: true
+      onyxpads.set: true
+      onyxpads.info: true
+      onyxpads.list: true
+      onyxpads.reload: true
+      onyxpads.bypass.combat: true
+      onyxpads.power.*: true
+
+  onyxpads.use:
+    description: Permite usar el comando principal
+    default: op
+
+  onyxpads.create:
+    description: Permite crear jump pads
+    default: op
+
+  onyxpads.delete:
+    description: Permite eliminar jump pads
+    default: op
+
+  onyxpads.set:
+    description: Permite modificar atributos de jump pads
+    default: op
+
+  onyxpads.info:
+    description: Permite ver información de jump pads
+    default: op
+
+  onyxpads.list:
+    description: Permite listar todos los jump pads
+    default: op
+
+  onyxpads.reload:
+    description: Permite recargar la configuración del plugin
+    default: op
+
+  onyxpads.bypass.combat:
+    description: Permite usar jump pads estando en combate
+    default: false
+
+  onyxpads.power.*:
+    description: Permite usar cualquier nivel de potencia
+    default: op
+    children:
+      onyxpads.power.1: true
+      onyxpads.power.2: true
+      onyxpads.power.3: true
+      onyxpads.power.4: true
+      onyxpads.power.5: true
