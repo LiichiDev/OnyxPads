@@ -1,6 +1,6 @@
 # Table of contents
 
-* [🌐 Welcome to Onyx Studios](README.md)
+* [🚀 Welcome to Onyx Studios](README.md)
 * [ONYX | Plugins](onyx-or-plugins/README.md)
   * [OnyxCore](onyx-or-plugins/onyxcore.md)
   * [OnyxItems](onyx-or-plugins/onyxitems.md)
