@@ -1,6 +1,6 @@
 # 🚀 OnyxPads - Advanced Jump Pads Plugin
 
-[![Version](https://img.shields.io/badge/version-1.0.2-blue.svg)](https://github.com/LichiDev/OnyxPads)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/LichiDev/OnyxPads)
 [![API Version](https://img.shields.io/badge/API-1.21-green.svg)](https://papermc.io)
 [![License](https://img.shields.io/badge/license-MIT-orange.svg)](LICENSE)
 
