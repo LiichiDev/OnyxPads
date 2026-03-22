@@ -37,7 +37,7 @@ A powerful and customizable jump pad plugin for Minecraft servers, supporting mu
 
 ## 🔧 Installation
 
-1. Download the latest `OnyxPads.jar` from [Releases](https://github.com/LichiDev/OnyxPads/releases)
+1. Download the latest `OnyxPads.jar` from [Releases](https://modrinth.com/plugin/onyxpads)
 2. Place it in your server's `plugins` folder
 3. Restart your server (or run `/reload confirm`)
 4. Configure the plugin in `plugins/OnyxPads/config.yml`
